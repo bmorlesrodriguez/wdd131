@@ -1,0 +1,120 @@
+/* ===== esquema de cores (verdes) e fontes ===== */
+:root {
+  --verde-escuro: #66be9a;   /* header e footer */
+  --verde-noite: #081c15;    /* barra de navegação */
+  --verde-medio: #1e9e64;    /* destaque / hover */
+  --verde-claro: #b7d7c0;    /* main */
+  --verde-gelo: #f1f8f3;     /* aside */
+  --texto-claro: #ffffff;
+  --texto-escuro: #14281d;
+
+  --fonte: "Nunito Sans", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--fonte);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--texto-escuro);
+
+  /* Layout do Santo Graal com CSS Grid */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "nav    nav"
+    "main   aside"
+    "footer footer";
+}
+
+/* ===== Header ===== */
+header {
+  grid-area: header;
+  background: var(--verde-escuro);
+  color: var(--texto-claro);
+  padding: 1.25rem;
+  min-height: 100px;
+}
+
+/* ===== Navegação ===== */
+nav {
+  grid-area: nav;
+  background: var(--verde-noite);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex: 1;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  color: var(--texto-claro);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--verde-medio);
+  outline: none;
+}
+
+/* ===== Conteúdo principal ===== */
+main {
+  grid-area: main;
+  background: var(--verde-claro);
+  padding: 1.25rem;
+}
+
+/* ===== Aside ===== */
+aside {
+  grid-area: aside;
+  background: var(--verde-gelo);
+  padding: 1.25rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  grid-area: footer;
+  background: var(--verde-escuro);
+  color: var(--texto-claro);
+  text-align: center;
+  padding: 1.25rem;
+  min-height: 180px;
+}
+
+/* ===== Responsivo: em telas pequenas vira uma coluna só ===== */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  footer {
+    min-height: 120px;
+  }
+}
