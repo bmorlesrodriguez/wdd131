@@ -6,10 +6,10 @@
 }
 
 :root {
-  --cor-fundo: antiquewhite;
-  --cor-principal: rgb(170, 14, 108);
-  --cor-destaque: indianred;
-  --cor-titulo: #a33d3d; /* indianred mais escuro, para contraste WCAG AA */
+  --cor-fundo: #faebd7;
+  --cor-principal: #aa0e6c;
+  --cor-destaque: #cd5c5c;
+  --cor-titulo: #a33d3d; /* #cd5c5c mais escuro, para contraste WCAG AA */
   --cor-texto: #222;
   --fonte-titulo: "Montserrat Alternates", sans-serif;
   --fonte-corpo: "Cabin", sans-serif;
@@ -35,7 +35,7 @@ header {
   text-align: center;
   font-family: var(--fonte-titulo);
   font-size: 1.4rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid #c862a0;
 }
 
 /* Navegação com Flexbox */
@@ -87,7 +87,7 @@ h1 {
 /* Cartões */
 .card {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid #bfbfbf;
   border-radius: 8px;
   overflow: hidden;
 }
