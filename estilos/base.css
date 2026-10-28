@@ -1,0 +1,179 @@
+/* Resetar CSS do projeto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: antiquewhite;
+  --cor-principal: rgb(170, 14, 108);
+  --cor-destaque: indianred;
+  --cor-titulo: #a33d3d; /* indianred mais escuro, para contraste WCAG AA */
+  --cor-texto: #222;
+  --fonte-titulo: "Montserrat Alternates", sans-serif;
+  --fonte-corpo: "Cabin", sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-corpo);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-principal);
+  color: #fff;
+}
+
+#titulo-curso {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Navegação com Flexbox */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #7d0a50;
+}
+
+nav a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--cor-destaque);
+  color: #000;
+}
+
+/* Conteúdo principal com largura limitada e CSS Grid */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  align-items: start;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: var(--cor-titulo);
+  border-bottom: 2px solid var(--cor-destaque);
+  padding-bottom: 0.5rem;
+}
+
+/* Cartões */
+.card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card h2 {
+  background-color: var(--cor-principal);
+  color: #fff;
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+.card-corpo {
+  padding: 1rem;
+}
+
+.card-corpo p {
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  clear: both;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-titulo);
+  border-bottom: 1px solid #bbb;
+  padding-top: 0.5rem;
+  margin: 0.5rem 2rem 1rem;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #8a0b5a;
+}
+
+.card a:hover {
+  color: var(--cor-titulo);
+  text-decoration-thickness: 3px;
+}
+
+/* Imagens */
+.foto-perfil {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin: 0 0 0.5rem 1rem;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+
+.foto-pais {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 0 1rem 0.5rem 0;
+  border: 1px solid #aaa;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-principal);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p:last-child {
+  font-size: 0.9rem;
+}
+
+/* Telas pequenas: uma coluna */
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #titulo-curso {
+    font-size: 1.1rem;
+  }
+}

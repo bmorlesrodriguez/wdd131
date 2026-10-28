@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 Fundamentos da Web Dinâmica | Beatriz Morles</title>
+  <meta name="description" content="Página pessoal de Beatriz Morles no curso WDD 131, com sua apresentação e sua evolução no desenvolvimento web.">
+  <meta name="author" content="Beatriz Morles">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
+  <header>
+    <span id="titulo-curso">WDD 131: Fundamentos da Web Dinâmica - Beatriz Morles</span>
+    <nav>
+      <a href="#">Página Inicial</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por/" target="_blank" rel="noopener noreferrer">Escritura</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Projeto Final</a>
+      
+    </nav>
+  </header>
+
+  <main>
     <h1>Beatriz Morles</h1>
 
-    <p>Sotfware Developer</p>
+    <section class="card">
+      <h2>Sobre Mim</h2>
+      <div class="card-corpo">
+        <img class="foto-perfil" src="imagens/perfil.jpg" alt="Foto de perfil da Beatriz Morles" width="200" height="200">
+        <p>Olá! Meu nome é Beatriz Morles e sou de Coro, Venezuela.
+          Gosto muito de piano, música, arte, filmes e séries.
+          Também amo viajar, conhecer restaurantes e visitar parques temáticos.
+          Gosto de aprender coisas novas.</p>
+        <p>Estou descobrindo aos poucos esse universo da tecnologia e espero continuar
+          desenvolvendo minhas habilidades ao longo dessa jornada. Este site representa uma das
+          primeiras etapas da minha vida como estudante de desenvolvimento web, e quero olhar para
+          ele no futuro e perceber o quanto evoluí.</p>
+
+        <h3>Venezuela</h3>
+        <img class="foto-pais" src="imagens/caracas-venezuela.jpg" alt="Vista de Caracas, capital da Venezuela, com a montanha El Ávila ao fundo" width="200" height="113">
+        <p>A Venezuela é um país sul-americano banhado pelo Mar do Caribe, com relevo que inclui
+          os Andes, planícies e o Planalto das Guianas. O nome significa "pequena Veneza", dado por
+          Américo Vespúcio ao ver casas construídas sobre o lago Maracaíbo. O beisebol é o esporte
+          mais popular do país.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Recursos Web Dev</h2>
+      <div class="card-corpo">
+        <ul>
+          <li><a href="https://churchofjesuschristtemples.org/assets/img/temples/_temp/096-Caracas-Venezuela-Temple.jpg" target="_blank" rel="noopener noreferrer">Comunidade Dev.to</a></li>
+          <li><a href="https://churchofjesuschristtemples.org/assets/img/temples/provo-utah-rock-canyon-temple/provo-utah-rock-canyon-temple-45659-main.jpg" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+          <li><a href="https://churchofjesuschristtemples.org/assets/img/temples/cali-colombia-temple/cali-colombia-temple-22101-main.jpg" target="_blank" rel="noopener noreferrer">Imagem de Espaço Reservado Lorem Picsum</a></li>
+          <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="ano-atual">2026</span> 🏝️ Beatriz Morles 🏝️ Coro, Venezuela</p>
+    <p>Última modificação: <span id="ultima-modificacao"></span></p>
+  </footer>
 </body>
 </html>
