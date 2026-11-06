@@ -91,3 +91,6 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
 .site-footer p + p { font-size: .9rem; opacity: .9; }
 @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+.filter-button { text-decoration: none; }
+.temple-card[hidden] { display: none; }
