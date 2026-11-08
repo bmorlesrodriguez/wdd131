@@ -15,8 +15,9 @@
   .menu-toggle {
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
     padding: 8px 13px;
-    border: 1px solid rgb(255 255 255 / 70%);
+    border: 1px solid #fff;
     border-radius: 6px;
     color: #fff;
     background: transparent;
@@ -24,7 +25,7 @@
   }
   .main-nav { display: none; align-items: stretch; flex-direction: column; gap: 3px; }
   .main-nav.is-open { display: flex; }
-  .filter-button { width: 100%; text-align: left; }
+  .filter-button { width: 100%; min-height: 44px; text-align: left; }
   .intro { padding-top: 38px; }
   .gallery-section { padding: 8px 18px 38px; }
 }
