@@ -64,7 +64,6 @@ button, a { font: inherit; }
 .filter-button:hover { background: rgb(0 0 0 / 22%); }
 .filter-button.is-active { color: var(--dourado-dark); background: #fff; }
 
-/* Foco visível: claro sobre o cabeçalho, escuro sobre o fundo claro */
 a:focus-visible, button:focus-visible { outline: 3px solid var(--dourado-dark); outline-offset: 3px; }
 .site-header a:focus-visible,
 .site-header button:focus-visible,
@@ -105,7 +104,7 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
   background: var(--dourado-soft);
   transition: box-shadow .25s ease, transform .25s ease;
 }
-/* :hover com box-shadow nas imagens */
+
 .temple-card img:hover {
   position: relative;
   z-index: 1;
