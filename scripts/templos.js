@@ -44,7 +44,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// Rodapé dinâmico: ano dos direitos autorais e última modificação
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
 const modifiedTime = document.querySelector("#last-modified");
