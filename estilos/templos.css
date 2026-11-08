@@ -5,8 +5,8 @@
   --dourado-soft: #fff2cc;
   --ink: #2e2618;
   --muted: #685a3e;
-  --paper: #d8ab38;
-  --shadow: 0 12px 32px rgb(79 54 9 / 13%);
+  --paper: #f5efdf;
+  --shadow: 0 12px 32px rgba(238, 160, 15, 0.13);
 }
 
 * { box-sizing: border-box; }
