@@ -44,8 +44,7 @@ button, a { font: inherit; }
   color: #fff;
   background: transparent;
   cursor: pointer;
-  transition: background-color .2s ease, color .2s ease;
-}
+  transition: background-color .2s ease, color .2s ease;`r`n  text-decoration: none;`r`n}
 .filter-button:hover, .filter-button:focus-visible { background: rgb(255 255 255 / 16%); }
 .filter-button.is-active { color: var(--purple-dark); background: #fff; }
 .filter-button:focus-visible, .menu-toggle:focus-visible, a:focus-visible { outline: 3px solid #e9c7ff; outline-offset: 3px; }
