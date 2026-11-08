@@ -6,7 +6,7 @@
   <meta name="description" content="Álbum fotográfico de templos em Utah, Provo, Caracas, Colômbia, Peru e Roma.">
   <meta name="author" content="Beatriz Morles">
   <title>Álbum do Templo | Beatriz Morles</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌺%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
@@ -19,11 +19,11 @@
     <a class="brand" href="templos.html">Álbum do Templo</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
     <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
-      <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Página Inicial</button>
-      <button class="filter-button" type="button" data-filter="antigo" aria-pressed="false">Antigo</button>
-      <button class="filter-button" type="button" data-filter="novo" aria-pressed="false">Novo</button>
-      <button class="filter-button" type="button" data-filter="grande" aria-pressed="false">Grande</button>
-      <button class="filter-button" type="button" data-filter="pequeno" aria-pressed="false">Pequeno</button>
+      <a class="filter-button is-active" href="#galeria" data-filter="todos" aria-current="page">Página Inicial</a>
+      <a class="filter-button" href="#galeria" data-filter="antigo">Antigo</a>
+      <a class="filter-button" href="#galeria" data-filter="novo">Novo</a>
+      <a class="filter-button" href="#galeria" data-filter="grande">Grande</a>
+      <a class="filter-button" href="#galeria" data-filter="pequeno">Pequeno</a>
     </nav>
   </header>
 
@@ -98,7 +98,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="current-year">2026</span> 🌺 Beatriz Morles 🌺 Coro, Venezuela</p>
+    <p>&copy; <span id="current-year">2026</span>🌺Beatriz Morles🌺Venezuela</p>
     <p>Última modificação: <time id="last-modified" datetime="2026-11-05T00:00:00Z">05/11/2026</time></p>
   </footer>
 </body>
