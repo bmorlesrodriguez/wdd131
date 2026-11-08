@@ -1,8 +1,8 @@
 :root {
   color-scheme: light;
-  --purple: #8a5b08;
-  --purple-dark: #503400;
-  --purple-soft: #fff2cc;
+  --dourado: #8a5b08;
+  --dourado-dark: #503400;
+  --dourado-soft: #fff2cc;
   --ink: #2e2618;
   --muted: #685a3e;
   --paper: #fffdf8;
@@ -27,7 +27,7 @@ button, a { font: inherit; }
   justify-content: space-between;
   gap: 24px;
   color: #fff;
-  background: var(--purple);
+  background: var(--dourado);
 }
 .brand {
   color: inherit;
@@ -55,7 +55,7 @@ main { min-height: calc(100vh - 160px); }
 .intro { padding: 56px 20px 26px; text-align: center; }
 .eyebrow {
   margin: 0 0 6px;
-  color: var(--purple);
+  color: var(--dourado);
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: .14em;
@@ -84,8 +84,9 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
+  max-width: 100%;
   object-fit: cover;
-  background: var(--purple-soft);
+  background: var(--dourado-soft);
 }
 .temple-card figcaption { padding: 15px 18px 18px; }
 .temple-card h2 { margin: 0; color: var(--purple); font-size: 1.2rem; line-height: 1.25; }
@@ -99,5 +100,4 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
 @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 
-.filter-button { text-decoration: none; }
 .temple-card[hidden] { display: none; }
