@@ -89,12 +89,12 @@ h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
   background: var(--dourado-soft);
 }
 .temple-card figcaption { padding: 15px 18px 18px; }
-.temple-card h2 { margin: 0; color: var(--purple); font-size: 1.2rem; line-height: 1.25; }
+.temple-card h2 { margin: 0; color: var(--dourado); font-size: 1.2rem; line-height: 1.25; }
 .temple-card p { margin: 6px 0 0; color: var(--muted); font-size: .94rem; }
 .empty-message { padding: 32px; color: var(--muted); text-align: center; }
 .photo-credit { margin: 26px 0 0; color: var(--muted); font-size: .85rem; text-align: center; }
-.photo-credit a { color: var(--purple); }
-.site-footer { padding: 18px 16px; color: #fff; background: var(--purple); text-align: center; }
+.photo-credit a { color: var(--dourado); }
+.site-footer { padding: 18px 16px; color: #fff; background: var(--dourado); text-align: center; }
 .site-footer p { margin: 3px 0; }
 .site-footer p + p { font-size: .9rem; opacity: .9; }
 @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
