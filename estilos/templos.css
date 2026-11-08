@@ -47,9 +47,9 @@ button, a { font: inherit; }
   transition: background-color .2s ease, color .2s ease;
   text-decoration: none;
 }
-.filter-button:hover, .filter-button:focus-visible { background: rgb(255 255 255 / 16%); }
-.filter-button.is-active { color: var(--purple-dark); background: #fff; }
-.filter-button:focus-visible, .menu-toggle:focus-visible, a:focus-visible { outline: 3px solid #e9c7ff; outline-offset: 3px; }
+.filter-button:hover, .filter-button:focus-visible { background: rgb(255 255 255 / 22%); }
+.filter-button.is-active { color: var(--dourado-dark); background: #fff; }
+.filter-button:focus-visible, .menu-toggle:focus-visible, a:focus-visible { outline: 3px solid #f4d47a; outline-offset: 3px; }
 .menu-toggle { display: none; }
 main { min-height: calc(100vh - 160px); }
 .intro { padding: 56px 20px 26px; text-align: center; }
