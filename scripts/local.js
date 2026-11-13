@@ -29,3 +29,9 @@ if (temperaturaC <= 10 && velocidadeVentoKmh > 4.8) {
 } else {
   windChillElement.textContent = "Não calculável";
 }
+
+const anoAtual = document.querySelector("#ano-atual");
+const ultimaModificacao = document.querySelector("#ultima-modificacao");
+
+anoAtual.textContent = new Date().getFullYear();
+ultimaModificacao.textContent = document.lastModified;
