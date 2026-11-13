@@ -1,9 +1,3 @@
-const anoAtual = document.querySelector("#ano-atual");
-const ultimaModificacao = document.querySelector("#ultima-modificacao");
-
-anoAtual.textContent = new Date().getFullYear();
-ultimaModificacao.textContent = document.lastModified;
-
 const temperaturaC = 8;
 const velocidadeVentoKmh = 10;
 
