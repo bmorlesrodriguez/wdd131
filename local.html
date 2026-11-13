@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07529a">
+    <meta name="description" content="Conheça dados e clima da Venezuela em uma página responsiva.">
+    <title>Venezuela — dados e clima</title>
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="js/local.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Venezuela</h1>
+    </header>
+
+    <main>
+      <section class="country-scene" aria-label="Dados e clima da Venezuela">
+        <picture class="hero-photo">
+          <source
+            media="(max-width: 47.999rem)"
+            srcset="imagens/venezuela-waterfall-mobile.webp"
+            type="image/webp">
+          <source
+            media="(min-width: 48rem)"
+            srcset="imagens/venezuela-beach-desktop.webp"
+            type="image/webp">
+          <img
+            src="imagens/venezuela-beach-desktop.webp"
+            srcset="imagens/venezuela-beach-desktop.webp 612w"
+            sizes="100vw"
+            alt="Paisagem tropical da Venezuela"
+            fetchpriority="high">
+        </picture>
+
+        <section class="info-panel data-panel" aria-labelledby="data-title">
+          <h2 id="data-title">Dados</h2>
+          <dl class="fact-list">
+            <div><dt>Área:</dt><dd>916.445 km²</dd></div>
+            <div><dt>População:</dt><dd>28.598.076 (estimativa)</dd></div>
+            <div><dt>Capital:</dt><dd>Caracas</dd></div>
+            <div><dt>Idiomas:</dt><dd>Espanhol e línguas indígenas</dd></div>
+            <div><dt>Moeda:</dt><dd>Bolívar (VES)</dd></div>
+            <div><dt>Fuso horário:</dt><dd>UTC−4</dd></div>
+            <div><dt>Código de chamada:</dt><dd>+58</dd></div>
+            <div><dt>TLD da Internet:</dt><dd>.ve</dd></div>
+          </dl>
+        </section>
+
+        <section class="info-panel climate-panel" aria-labelledby="climate-title">
+          <div class="climate-heading">
+            <h2 id="climate-title">Clima</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="" aria-hidden="true">
+          </div>
+          <p class="weather-location">Mérida, Venezuela <span>· valores estáticos</span></p>
+          <dl class="fact-list weather-list">
+            <div><dt>Temperatura:</dt><dd>8 °C</dd></div>
+            <div><dt>Condições:</dt><dd>Parcialmente nublado</dd></div>
+            <div><dt>Vento:</dt><dd>10 km/h</dd></div>
+            <div><dt>Sensação térmica:</dt><dd id="wind-chill" aria-live="polite">Calculando…</dd></div>
+          </dl>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> Venezuela</p>
+      <p>Última modificação: <time id="last-modified"></time></p>
+    </footer>
+  </body>
+</html>
